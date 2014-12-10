@@ -1,0 +1,316 @@
+﻿<!DOCTYPE HTML>
+<html manifest="" lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <title>Leap</title>
+    <script type="text/javascript" src="phonegap.js"></script>
+    <!-- The line below must be kept intact for Sencha Command to build your application -->
+    <script id="microloader" type="text/javascript" src=".sencha/app/microloader/development.js"></script>
+</head>
+<body>
+
+
+    <div id="sponsorDetail" style="display: none;background-color: #fff" data-role="content" class="ui-content" role="main">
+        <div class="SPONSOR_IMAGE_CONTAINER">
+            <img class="spn_logo" src="http://www.landrysleap.com/images/mobile/logos/HITACHI_CONSULTING.png">
+            <img class="spn_type" src="app/images/icons/platinum.png">
+            <br>
+            <span class="spn_name">HITACHI CONSULTING</span>
+        </div>
+        <ul data-role="listview" data-split-icon="gear" data-split-theme="d" data-inset="true" id="ui-allsponsorsdetail-links" class="ui-listview ui-listview-inset ui-corner-all ui-shadow">
+            <li data-corners="false" data-shadow="false" data-iconshadow="true" data-wrapperels="div" data-icon="arrow-r" data-iconpos="right" data-theme="c" class="ui-btn ui-btn-icon-right ui-li-has-arrow ui-li ui-first-child ui-last-child ui-btn-up-c">
+                <div class="ui-btn-inner ui-li">
+                    <div class="ui-btn-text">
+                        <a class="ui-list-anchor cls-sd-sponsor ui-link-inherit" href="#">
+                            <h2 class="ui-li-heading">Kenny Ng</h2>
+                            <p class="ui-li-desc">PM</p>
+                            <p class="ui-li-desc">Email: </p>
+                            <span class="ui-attendeetypes">
+                                <img src="app/images/icons/offline.png">
+                            </span>
+                        </a>
+                    </div>
+                    <span class="ui-icon ui-icon-arrow-r ui-icon-shadow">&nbsp;</span>
+                </div>
+            </li>
+        </ul>
+    </div>
+
+
+
+    <div id="localGuide" data-role="content" style="display: none;background-color: #fff">
+        <table id="ui-guide-links">
+
+            <tr data-rel="http://www.bubbagump.com/locations/las-vegas/">
+                <td class="guide_l">
+                    <img src="resources/images/logos/guidelogos/BubbaGump.png" />
+                </td>
+                <td class="guide_m">
+                    <strong>Bubba Gump Shrimp Co.</strong> <br />
+                    3717 Las Vegas Boulevard South <br />
+                    (702)795-1016 <br />
+                    <span class="guide-txt">(6.4 miles)</span>
+                </td>
+            </tr>
+
+            <tr data-rel="http://www.chart-house.com/">
+                <td class="guide_l">
+                    <img src="resources/images/logos/guidelogos/charthouse.png" />
+                </td>
+                <td class="guide_m">
+                    <strong>Chart House</strong> <br />
+                    129 East Freemont Street <br />
+                    (702)386-8364 <br />
+                    <span class="guide-txt"> (Inside Golden Nugget) </span>
+                </td>
+            </tr>
+
+            <tr data-rel="http://www.claimjumper.com/locations.aspx">
+                <td class="guide_l">
+                    <img src="resources/images/logos/guidelogos/ClaimJumper.png" />
+                </td>
+                <td class="guide_m">
+                    <strong>Claim Jumper - Town Square </strong> 		 <br />
+                    6629 Las Vegas Boulevard  <br />
+                    (702)270-2509  <br />
+                    <span class="guide-txt">(9.7 miles)</span>
+                </td>
+            </tr>
+
+            <tr data-rel="http://www.claimjumper.com/locations.aspx">
+                <td class="guide_l">
+                    <img src="resources/images/logos/guidelogos/ClaimJumper.png" />
+                </td>
+                <td class="guide_m">
+                    <strong>Claim Jumper - Summerlin </strong> 		 <br />
+                    100 S Fort Apache Road  <br />
+                    (702)243-8751  <br />
+                    <span class="guide-txt">(11.7 miles)</span>
+                </td>
+            </tr>
+
+            <tr data-rel="http://www.claimjumper.com/locations.aspx">
+                <td class="guide_l">
+                    <img src="resources/images/logos/guidelogos/ClaimJumper.png" />
+                </td>
+                <td class="guide_m">
+                    <strong>Claim Jumper - Henderson </strong> 		 <br />
+                    601 N Green Valley Parkway  <br />
+                    (702)933-0880 <br />
+                    <span class="guide-txt">(16.1 miles)</span>
+                </td>
+            </tr>
+
+            <tr data-rel="http://www.goldennugget.com/lasvegas/eat_grotto.asp">
+                <td class="guide_l">
+                    <img src="resources/images/logos/guidelogos/grotto.png" />
+                </td>
+                <td class="guide_m">
+                    <strong>Grotto </strong>
+                    <br />
+                    129 East Fremont Street <br />
+                    (702)386-8341 <br />
+
+                    <span class="guide-txt">(Inside Golden Nugget)</span>
+                </td>
+            </tr>
+
+            <tr data-rel="http://www.landrysseafood.com/location-las-vegas.asp">
+                <td class="guide_l">
+                    <img src="resources/images/logos/guidelogos/LandrysSeafood.png" />
+                </td>
+                <td class="guide_m">
+                    <strong>Landry's Seafood </strong>
+                    <br />
+                    2610 W. Sahara Avenue <br />
+                    (702)251-0101 <br />
+
+                    <span class="guide-txt">(4.1 miles)</span>
+                </td>
+            </tr>
+
+            <tr data-rel="http://www.mccormickandschmicks.com/locationmap.aspx?state=NV">
+                <td class="guide_l">
+                    <img src="resources/images/logos/guidelogos/MastrosOceanClub.png" />
+                </td>
+                <td class="guide_m">
+                    <strong>Mastro's Ocean Club </strong>
+                    <br />
+                    3720 Las Vegas Boulevard South <br />
+                    (702)798-7115 <br />
+
+                    <span class="guide-txt">(6.8 miles)</span>
+                </td>
+            </tr>
+
+            <tr data-rel="http://www.mccormickandschmicks.com/locationmap.aspx?state=NV">
+                <td class="guide_l">
+                    <img src="resources/images/logos/guidelogos/MSSR.png" />
+                </td>
+                <td class="guide_m">
+                    <strong>McCormick & Schmick's </strong>
+                    <br />
+                    335 Hughes Center Drive <br />
+                    (702)836-9000 <br />
+
+                    <span class="guide-txt">(6.9 miles)</span>
+                </td>
+            </tr>
+
+            <tr data-rel="http://www.mortons.com">
+                <td class="guide_l">
+                    <img src="resources/images/logos/guidelogos/Mortons.png" />
+                </td>
+                <td class="guide_m">
+                    <strong>Morton's The Steakhouse </strong>
+                    <br />
+                    400 E. Flamingo Road <br />
+                    (702)893-0703 <br />
+
+                    <span class="guide-txt">(4.6 miles)</span>
+                </td>
+            </tr>
+
+            <tr data-rel="http://www.rainforestcafe.com/locations.asp?st=nv">
+                <td class="guide_l">
+                    <img src="resources/images/logos/guidelogos/RainForest.png" />
+                </td>
+                <td class="guide_m">
+                    <strong>Rainforest Cafe </strong>
+                    <br />
+                    3799 Las Vegas Boulevard <br />
+                    (702)891-8580 <br />
+                    <span class="guide-txt">(6.8 miles)</span>
+                </td>
+            </tr>
+
+            <tr data-rel="http://she-lv.com/">
+                <td class="guide_l">
+                    <img src="resources/images/logos/guidelogos/SHe.png" />
+                </td>
+                <td class="guide_m">
+                    <strong>SHe </strong>
+                    <br />
+                    3720 Las Vegas Boulevard South <br />
+                    (702)254-2376 <br />
+
+                    <span class="guide-txt">(4.96 miles)</span>
+                </td>
+            </tr>
+
+            <tr data-rel="http://www.trevi-italian.com">
+                <td class="guide_l">
+                    <img src="resources/images/logos/guidelogos/Trevi.png" />
+                </td>
+                <td class="guide_m">
+                    <strong>Trevi </strong>
+                    <br />
+                    3500 Las Vegas Boulevard  <br />
+                    (702)735-4663  <br />
+
+                    <span class="guide-txt">(6.1 miles)</span>
+                </td>
+            </tr>
+
+            <tr data-rel="http://www.goldennugget.com/lasvegas/eat_vicanthonys.asp">
+                <td class="guide_l">
+                    <img src="resources/images/logos/guidelogos/VAS.png" />
+                </td>
+                <td class="guide_m">
+                    <strong>Vic & Anthony's Steak House </strong>
+                    <br />
+                    129 Fremont Street <br />
+                    (702)386-8399 <br />
+                    <span class="guide-txt">(Inside Golden Nugget)</span>
+                </td>
+            </tr>
+        </table>
+
+    </div>
+
+
+    <div id="TAB1" style="display: none;background-color: #fff">
+        <div>
+            <div style="display: none;background-color: #fff" class="offer_background">
+                <div class="o_offer_smaller" style="text-align: center;">
+                    <img style="width:30%;" src="resources/images/logos/Golden_Nugget_LogoLasVegas.jpg" />
+                </div>
+                <br />
+                <span class="ui-offers-txt">Enjoy a 30% discount on purchases made at Golden Nugget’s Retail Shops</span>
+                <br />
+                <span>February 2 – 5, 2014.</span>
+                <br /><br />
+
+                <div class="o_offer_bigger" style="text-align: center;">
+                    <img style="width:70%;" src="resources/images/resources/barcode46.jpg" />
+                </div>
+                <span class="ui-offers-txt"> Treat someone Special to a gift from d’Oro with a limited time offer payroll deduction option: form available on the Conference website at www.landrysleap.com.</span> <br /> <br />
+                <span class="ui-offers-small-txt">*Retail discount valid at Style + Trend, D’Oro, Nineteen Forty-Six, The Chocolate Box, Essentials and Signature. Discount is the standard Landry’s employee retail discount. Some exclusions may apply.</span>
+            </div>
+        </div>
+        <div>
+            <div  class="offer_background" >
+                <div class="o_offer_smaller" style="text-align: center;">
+                    <img style="width:30%;" src="resources/images/logos/Golden_Nugget_LogoLasVegas.jpg" />
+                </div>
+                <br />
+                <span class="ui-offers-txt">Enjoy a 10% discount on purchases made at Golden Nugget’s Retail Shops</span>
+                <br />
+                <span>February 2 – 5, 2014.</span>
+                <br /><br />
+
+                <div class="o_offer_bigger" style="text-align: center;">
+                    <img style="width:70%;" src="resources/images/resources/barcode.png" />
+                </div>
+
+                <span class="ui-offers-small-txt">*Retail discount valid at  Style + Trend, D’Oro, Nineteen Forty-Six, The Chocolate Box, Essentials and Signature. Some exclusions may apply.</span>
+            </div>
+        </div>
+    </div>
+
+    <div id="TAB2" style="display: none;background-color: #fff">
+        <div class="offer_background">
+            <div class="o_offer_smaller">
+                <img style="width:30%;text-align:center;" src="resources/images/resources/spasalon.jpg" />
+            </div>
+            <br />
+            <span class="ui-offers-txt">Receive 30% Off Spa Services & Retail</span>
+            <br />
+            <span>Advanced reservations are strongly recommended for spa services. For reservations call 702.386.8186.</span>
+            <br /><br />
+            <span class="ui-offers-txt">Complimentary Gym Access</span>
+            <br />
+            <span>Present your Conference Badge for complimentary use of the Spa workout area and locker room.</span>
+            <br /><br />
+            <span class="ui-offers-txt">Hours of Operation:</span>
+            <br />
+            <span>February 3 – 6 ● 5am – 8pm.</span>
+            <br /><br />
+
+
+        </div>
+    </div>
+
+    <div id="TAB3" style="display: none;background-color: #fff">
+        <div class="offer_background">
+            <div class="o_offer_smaller" >
+                <img style="width:30%;text-align:center;" src="resources/images/logos/Golden_Nugget_LogoLasVegas.jpg" />
+            </div>
+            <br />
+            <span class="ui-offers-txt">Place Your Bets!</span>
+            <br />
+            <span>Exclusive Parlay Cards at the Race & Sports Book for Leadership Conference attendees. Present your Conference Badge to redeem.</span>
+        </div>
+    </div>
+
+    <div ui-map-content" id="xMAP_FF_CONTAINER" style="display: none;background-color: #fff">
+        <img src="resources/images/resources/firstfloor.png" style="transform: matrix(0.55, 0, 0, 0.55, -273, -189);cursor: move;transition: none;-webkit-transition: none;" />
+    </div>
+    <div ui-map-content" id="xMAP_MR_CONTAINER" style="display: none;background-color: #fff">
+        <img src="resources/images/resources/meetingrooms.png" style="transform: matrix(0.65, 0, 0, 0.65, -204, -50);transition: none;-webkit-transition: none;" />
+    </div>
+
+
+
+</body>
+</html>

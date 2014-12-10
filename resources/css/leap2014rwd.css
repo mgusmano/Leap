@@ -1,0 +1,81 @@
+/* Laundry's RWD stylesheet */
+
+/* Smartphones (portrait) ----------- */
+@media only screen
+and (max-width : 320px) {
+	#home_page{
+		margin: 10px;
+	}
+}
+
+/* Smartphones (landscape) ----------- */
+@media only screen
+and (min-width : 321px)
+and (max-width : 568px) {
+	#CONTAINER_PAGE_LOGIN{
+		width: 360px;
+		text-align: center;
+		margin: 0 auto;
+	}
+	#home_page{
+		width: 360px;
+		text-align: center;
+		margin: 0 auto;
+	}
+	#PAGE_DETAIL{
+	
+	}
+	#PAGE_DETAIL .ui-home-subheader{
+		display: none;
+	}
+	.col-data{
+		display: table-cell;
+	}
+}
+
+/* Tablet (portrait) ----------- */
+@media only screen
+and (min-width : 569px)
+and (max-width : 768px) {
+	#CONTAINER_PAGE_LOGIN{
+		width: 360px;
+		text-align: center;
+		margin: 0 auto;
+	}
+	#home_page{
+		width: 360px;
+		text-align: center;
+		margin: 0 auto;
+	}
+	#PAGE_DETAIL{
+	
+	}
+	.col-data{
+		display: table-cell;
+	}
+}
+
+/* Tablet (landscape) ----------- */
+@media only screen
+and (min-width : 769px) {
+	#CONTAINER_PAGE_LOGIN{
+		width: 360px;
+		text-align: center;
+		margin: 0 auto;
+	}
+	#home_page{
+		text-align: center;
+		margin: 0 auto;
+		margin-left: 20px;
+	}
+	.ui-home-box{
+		width: 300px;
+		margin-left: 20px;
+	}
+	#PAGE_DETAIL{
+	
+	}
+	.col-data{
+		display: table-cell;
+	}
+}

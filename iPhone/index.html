@@ -1,0 +1,51 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+    <head>
+        <title>Test Sencha Apps</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+        <script language="JavaScript" type="text/javascript">
+function makeFrame() {
+	ifrm = document.createElement("IFRAME");
+	ifrm.setAttribute("src", "http://localhost:49346/");
+	//ifrm.setAttribute("class", "frame320-480");
+	ifrm.setAttribute("class", "frame320-568");
+	document.body.appendChild(ifrm);
+}
+        </script> 
+        <style>
+            body { background: white;}
+            .theImage320-480 {
+                position: absolute;background-repeat: no-repeat;height: 90%;width: 90%;background-image: url(iphone5.png);
+                background-size: 380px 674px;
+            }
+            .frame320-480 {
+                position: absolute;border: 0 !important;
+                top: 107px;
+                left: 40px;
+                width: 320px;
+                height: 480px;
+            }
+
+
+
+            .theImage320-568 {
+                position: absolute;background-repeat: no-repeat;height: 90%;width: 90%;background-image: url(iphone5.png);
+                background-size: 380px 762px;
+            }
+            .frame320-568 {
+                position: absolute;border: 0 !important;
+                top: 107px;
+                left: 40px;
+                width: 320px;
+                height: 568px;
+            }
+        </style>
+    </head>
+    <body onload="makeFrame()">
+        <!--	 
+        <div class="theImage320-480" />
+        -->
+        <div class="theImage320-568" />
+    </body>
+</html>

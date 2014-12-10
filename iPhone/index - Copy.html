@@ -1,0 +1,104 @@
+﻿
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+    <head>
+        <title>Test Sencha Apps</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <style>
+body{
+	background : #222;
+}
+
+            .frame {
+                position: relative;
+                left: 50%;
+                margin-top: 170px;
+                margin-left: -159px;
+                border: 0 !important;
+            }
+
+			.info{
+color: #D5D5D5;
+font-family: helvetica;
+width: 25%;
+padding: 20px;
+border: 1px solid #555;
+position: absolute;
+top: 40%;
+left: 2%;
+font-size: 15px;
+box-shadow: 0 0 15px 3px rgba(0, 0, 0, 1);
+border-radius: 5px;
+background: #222;
+			}
+
+        </style>
+        <script language="JavaScript" type="text/javascript">
+function getURLParam(strParamName){
+				var strReturn = "";
+				var strHref = window.location.href;
+				if ( strHref.indexOf("?") > -1 ){
+								var strQueryString = strHref.substr(strHref.indexOf("?"));
+								var aQueryString = strQueryString.split("&");
+								for ( var iParam = 0; iParam < aQueryString.length; iParam++ ){
+												if (
+																aQueryString[iParam].indexOf(strParamName.toLowerCase() + "=") > -1 ){
+																var aParam = aQueryString[iParam].split("=");
+																strReturn = aParam[1];
+																break;
+												}
+								}
+				}
+
+				return unescape(strReturn);
+}
+
+
+function makeFrame() {
+	
+				//var isMobile = {
+				//				Android: function() {
+				//								return navigator.userAgent.match(/Android/i) ? true : false;
+				//				},
+				//				BlackBerry: function() {
+				//								return navigator.userAgent.match(/BlackBerry/i) ? true : false;
+				//				},
+				//				iOS: function() {
+				//								return navigator.userAgent.match(/iPhone|iPad|iPod/i) ? true : false;
+				//				},
+				//				Windows: function() {
+				//								return navigator.userAgent.match(/IEMobile/i) ? true : false;
+				//				},
+				//				any: function() {
+				//								return (isMobile.Android() || isMobile.BlackBerry() || isMobile.iOS() || isMobile.Windows());
+				//				}
+				//};
+
+				ifrm = document.createElement("IFRAME");
+				//var url = getURLParam("url");
+				////                console.log(window.innerWidth)
+                
+				//if(isMobile.any()){
+				//				window.location = url;
+				//}
+				
+				
+				//ifrm.setAttribute("src", url || "http://localhost:54288/");
+				//ifrm.setAttribute("src", "http://localhost:54288/");
+				ifrm.setAttribute("src", "http://localhost:49346/");
+				ifrm.setAttribute("class", "frame");
+				ifrm.style.width = 321+"px";
+				ifrm.style.height = 481+"px";
+				ifrm.style.border = 'none';
+				document.body.appendChild(ifrm);
+}
+        </script> 
+    </head>
+    <body onload="makeFrame()">	    
+        <div style="position: absolute; left: 50%; margin-left: -221px; background-image: url(iPhone_small.png); height: 790px; width: 441px; "/>
+    </body>
+</html>

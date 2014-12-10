@@ -1,0 +1,1 @@
+var LDRY=LDRY||{};LDRY.fu="app/";LDRY.su="http://landrysleaptest.ldry.com/LeadershipConferenceServices.asmx";LDRY.du="app/data/";LDRY.ru="app/images/resources/sponsors/logos/";LDRY.lu="http://www.landrysleap.com/images/mobile/logos/";LDRY.tu="http://www.landrysleap.com/images/mobile/logos/thumbnails/";LDRY.mode="d";LDRY.init=function(){};

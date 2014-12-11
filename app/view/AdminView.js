@@ -3,7 +3,6 @@
     alias: 'widget.adminview',
 
     onDeleteLS: function () {
-        debugger;
         alert('HI');
 
         //localStorage.removeItem($L.key);

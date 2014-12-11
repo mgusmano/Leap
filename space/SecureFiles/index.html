@@ -1,0 +1,59 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta id="extViewportMeta" name="viewport"
+          content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-touch-fullscreen" content="yes">
+    <title>Secure Files</title>
+    <style type="text/css">
+        button {
+            font-size: 100%;
+        }
+
+        #log {
+            padding: 20px;
+        }
+
+        #invokeResults {
+            color: red;
+            font-weight: bold;
+        }
+
+        img {
+
+            height: 200px;
+            width: 200px;
+            padding: 3px;
+            margin: 3px;
+            border: 1px solid gray;
+        }
+
+    </style>
+    
+    <script src="http://space.sencha.io/beta/space.js"></script>
+
+
+</head>
+<body>
+<h1>Secure Files</h1>
+
+<button id="listFiles">Reload List</button>
+<button id="getPhoto">Add Photo</button>
+<button id="getLibrary">Import Photo</button>
+
+<button id="uploadLatest">Upload Last Photo</button>
+<button id="deleteFiles">Delete All</button>
+
+
+<div id="fileList"></div>
+<div id="log"></div>
+<script type="text/javascript">
+    window.onerror = function(a, b, c) {
+        alert(a + ' ' + b + ' ' + c);
+    };
+</script>
+<script src="app.js"></script>
+</body>
+</html>

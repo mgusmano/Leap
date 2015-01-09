@@ -140,10 +140,10 @@
     },
 
     constructor: function (config) {
-        this.callParent(config);
-
-        this.setTitle('Photos');
-        this.add([
+        var me = this;
+        me.callParent(arguments);
+        me.setTitle('Photos');
+        me.add([
             {
                 xtype: 'toolbar',
                 itemId: 'theDays',

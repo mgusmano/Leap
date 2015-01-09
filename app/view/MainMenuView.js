@@ -50,14 +50,12 @@
     },
 
     constructor: function (config) {
-        this.callParent(config);
-
+        var me = this;
+        this.callParent(arguments);
         this.add([
-
             {
                 xtype: 'container', layout: { type: 'hbox' }, padding: 10, height: 50, width: '100%', style: 'color: black;background-color:white;text-align:center;', html: 'weather here....'
             },
-
             { 
                 xtype: 'container', layout: {type: 'hbox'}, margin: '10 0 0 0',
                 items: [

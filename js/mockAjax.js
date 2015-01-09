@@ -22,8 +22,8 @@ $.mockjax({
 $.mockjax({
     url: 'http://landrysleaptest.ldry.com/LeadershipConferenceServices.asmx',
     response: function (settings) {
-        var XMLStart                = '<?xml version="1.0" encoding="utf-8"?><soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"><soap:Body>';
-        var XMLEnd                  = '</soap:Body></soap:Envelope>';
+        var XMLStart  = '<?xml version="1.0" encoding="utf-8"?><soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"><soap:Body>';
+        var XMLEnd = '</soap:Body></soap:Envelope>';
         if (settings.data.indexOf('AuthorizeMobileAttendee') > 0) {
             var AuthorizeMobileAttendee = '<AuthorizeMobileAttendeeResponse xmlns="http://ldry.com/"><AuthorizeMobileAttendeeResult>{"isValid":true,"attendeeType":"p","attendeeEmail":"KNg@hitachiconsulting.com","attendeeFirstName":"Kenny2","attendeeLastName":"Ng","attendeeContact":"1231231234","attended":0}</AuthorizeMobileAttendeeResult></AuthorizeMobileAttendeeResponse>';
             this.responseXML = XMLStart + AuthorizeMobileAttendee + XMLEnd;

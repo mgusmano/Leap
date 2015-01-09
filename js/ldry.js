@@ -4,6 +4,7 @@ var LDRY = LDRY || {};
 LDRY.fu = 'app/'; // front end url
 //LDRY.su = 'http://landrysleap.com/LeadershipConferenceServices.asmx'; // service url
 LDRY.su = 'http://landrysleaptest.ldry.com/LeadershipConferenceServices.asmx'; // service url
+//LDRY.su = 'http://tst4.landrysleap.com/LeadershipConferenceServices.asmx'; // service url
 LDRY.du = 'app/data/'; // data url
 //LDRY.ru = 'http://www.landrysleap.com/sponsors/resources/logos/'; // resource url
 //LDRY.ru = 'https://farm8.staticflickr.com/'; 

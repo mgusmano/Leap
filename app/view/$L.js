@@ -8,6 +8,34 @@
     isViewportLoaded: false,
     attendeeMessages: 0,
 
+    loading: 0,
+    startLoading: function (message) {
+        if (message == null || message == '') {
+            message = 'Loading data...';
+        }
+        this.loading++;
+        if (this.loading == 1) {
+            Ext.Msg.show({
+                title: 'Please wait',
+                width: 275,
+                maxWidth: 280,
+                height: 100,
+                maxHeight: 100,
+                closable: false,
+                msg: message
+            });
+        }
+    },
+
+    endLoading: function () {
+        if (this.loading === 1) {
+            Ext.Msg.hide();
+        }
+        this.loading--;
+    },
+
+
+
     showView: function (theViewName, direction) {
         //oldView.setMasked({ xtype: 'loadmask', message: '' });
         var myArray = Ext.Viewport.getItems().items;

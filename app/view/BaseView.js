@@ -14,7 +14,7 @@
         //        me.onBackButtonTap();
         //    }
         //});
-        this.callParent();
+        this.callParent(arguments);
     },
 
     setTitle: function (title) {

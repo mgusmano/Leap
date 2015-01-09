@@ -6,52 +6,48 @@
     _serviceAskCorporate: 'GetAllMobileAttendeesByType',
     _eIMG: {"1": "app/images/icons/online.png", "0": "app/images/icons/offline.png"},
 
-
-
     get: function(){
         var data = {attendeeEmail: LDRY.leapApp._ael, listType: 'C'};
         //console.log(data);
         LDRY.ajax.call(LDRY.leapApp.modAskCorporate._serviceAskCorporate, data, LDRY.leapApp.modAskCorporate.employeeSuccess);
     },
 
+    employeeSuccess: function(resp, status, xhr){
+        resp = $.parseJSON(resp.GetAllMobileAttendeesByTypeResponse.GetAllMobileAttendeesByTypeResult);
 
-
-employeeSuccess: function(resp, status, xhr){
-    resp = $.parseJSON(resp.GetAllMobileAttendeesByTypeResponse.GetAllMobileAttendeesByTypeResult);
-
-    //console.log(resp);
-    if (resp && resp.isValid) {
-        // Open Ask Corporate Page
+        //console.log(resp);
+        if (resp && resp.isValid) {
+            // Open Ask Corporate Page
           
-        LDRY.leapApp.modAskCorporate.populateAllEmployees(resp);
-    }
-    else {
-        LDRY.leapApp.showError('UNKNOWN ERROR', 'UNKNOWN ERROR');
-    }
-},
+            LDRY.leapApp.modAskCorporate.populateAllEmployees(resp);
+        }
+        else {
+            LDRY.leapApp.showError('UNKNOWN ERROR', 'UNKNOWN ERROR');
+        }
+    },
 	
-getCurrentPage: function(){
-    var cpg = $.mobile.activePage.attr('id');
-    return cpg;
-},
+    getCurrentPage: function(){
+        var cpg = $.mobile.activePage.attr('id');
+        return cpg;
+    },
 
-populateAllEmployees: function(resp){
-    //console.log(resp);
+    populateAllEmployees: function(resp){
+        //console.log(resp);
 
-    var eUL = $('ul#ui-askcorporate-links');
-    var noOfEmployees = resp.attendeeDetails.length;
+        var eUL = $('ul#ui-askcorporate-links');
+        var noOfEmployees = resp.attendeeDetails.length;
 		
-    eUL.empty();
-    for(var i=0; i< noOfEmployees; i++){
+        eUL.empty();
+        for(var i=0; i< noOfEmployees; i++){
 			
-        eUL.append('<li><a class="ui-list-anchor cls-ed-employee" href="#"><h2>'+resp.attendeeDetails[i].attendeeFirstName + ' ' +resp.attendeeDetails[i].attendeeLastName +'</h2><p> '+resp.attendeeDetails[i].attendeeTitle+'</p><p>Dept: '+resp.attendeeDetails[i].attendeeDepartment+'</p><p>Email: '+resp.attendeeDetails[i].attendeeEmail+'</p><span class="ui-attendeetypes"><img src="'+LDRY.leapApp.modAskCorporate._eIMG[resp.attendeeDetails[i].attended]+'"></span></a></li>');
-    }
+            eUL.append('<li><a class="ui-list-anchor cls-ed-employee" href="#"><h2>'+resp.attendeeDetails[i].attendeeFirstName + ' ' +resp.attendeeDetails[i].attendeeLastName +'</h2><p> '+resp.attendeeDetails[i].attendeeTitle+'</p><p>Dept: '+resp.attendeeDetails[i].attendeeDepartment+'</p><p>Email: '+resp.attendeeDetails[i].attendeeEmail+'</p><span class="ui-attendeetypes"><img src="'+LDRY.leapApp.modAskCorporate._eIMG[resp.attendeeDetails[i].attended]+'"></span></a></li>');
+        }
 			 
-    $.mobile.changePage($('#PAGE_CORPORATE'));
-    if (this.getCurrentPage != 'PAGE_CORPORATE') {
-        $('ul#ui-askcorporate-links').listview("refresh");
-    }
-},
+        $.mobile.changePage($('#PAGE_CORPORATE'));
+        if (this.getCurrentPage != 'PAGE_CORPORATE') {
+            $('ul#ui-askcorporate-links').listview("refresh");
+        }
+    },
 
     sponsorsSuccess: function (resp, status, xhr) {
         resp = $.parseJSON(resp.GetMobileSponsorsResponse.GetMobileSponsorsResult);
@@ -106,10 +102,9 @@ populateAllEmployees: function(resp){
 
     constructor: function (config) {
         var me = this;
-        this.callParent(config);
-
-        this.setTitle('Corporate');
-        this.add([
+        me.callParent(config);
+        me.setTitle('Corporate');
+        me.add([
          ]);
     }
 });

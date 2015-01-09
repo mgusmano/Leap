@@ -11,11 +11,15 @@
         //LDRY.ajax.call('GetMobileSponsors', data, me.sponsorsSuccess);
     },
 
+    //requires: [
+    //],
+    //activate: function() {
+    //},
     constructor: function (config) {
-        this.callParent(config);
-
-        this.setTitle('Admin');
-        this.add([
+        var me = this;
+        me.callParent(arguments);
+        me.setTitle('Admin');
+        me.add([
             {
                 xtype: 'button',
                 margin: 10,
@@ -24,4 +28,6 @@
             }
         ]);
     }
+    //config: {
+    //}
 });

@@ -1,4 +1,5 @@
 Ext.application({
+
     name: 'Leap',
     requires: [
         'Ext.MessageBox',
@@ -37,8 +38,34 @@ Ext.application({
     ],
 
     launch: function () {
+
+        if (window.WindowsAzure != undefined) {
+            $L.client = new WindowsAzure.MobileServiceClient('https://touchazure.azure-mobile.net/', 'RWoarrhdtvpsDSrmoBLOIxTgqDXyiY10');
+        }
+
+        try {
+
+            if (Ext.isSpace) {
+                Ext.onSpaceReady(function () {
+                    Ext.space.Fullscreen.enter().then(function () {
+                        console.log("Done entering fullscreen.");
+                    });
+                });
+            } else {
+
+                //Ext.Msg.alert(
+                //    'Sencha Space API not available',
+                //    'This app requires Sencha Space! ' +
+                //    'Visit www.sencha.com'
+                //);
+            }
+
+        }
+        catch (e) {
+            alert(e);
+        }
+
         Ext.Viewport.add([
-            //{ xtype: 'adminview' },
             { xtype: 'loginview' },
             { xtype: 'welcomeview' },
             { xtype: 'mainmenuview' }

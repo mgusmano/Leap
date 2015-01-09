@@ -3,10 +3,10 @@
     alias: 'widget.mapsview',
 
     constructor: function (config) {
-        this.callParent(config);
-
-        this.setTitle('Golden Nugget Maps');
-        this.add([
+        var me = this;
+        me.callParent(config);
+        me.setTitle('Golden Nugget Maps');
+        me.add([
             {
                 xtype: 'tabpanel',
                 fullscreen: false,

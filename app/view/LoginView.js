@@ -6,7 +6,9 @@
     config: {
         layout: {type: 'vbox', align: 'center' },
         title: 'Login',
-        cls: 'panelBackground',
+        //cls: 'panelBackground',
+        style: 'background-image: url(../images/background/laundrys-body-bg.png) !important;background-repeat: no-repeat !important;background-size: 100% 100% !important;',
+
         items: [
             {
                 xtype: 'image',

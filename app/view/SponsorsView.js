@@ -95,10 +95,10 @@
     },
 
     constructor: function (config) {
-        this.callParent(config);
-
-        this.setTitle('Sponsors');
-        this.add([
+        var me = this;
+        me.callParent(config);
+        me.setTitle('Sponsors');
+        me.add([
             {
                 id: 'sponsorList',
                 xtype: 'list',
